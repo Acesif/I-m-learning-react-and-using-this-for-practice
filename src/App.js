@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Nav from './nav'
+// import image from './NewHorizons.png'
+import Btn from './Btn'
+import DarkMode from './darkMode'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// function Image(prop){
+//   const imgTag = <img src={image} alt='new horizon'></img>
+//   return imgTag
+// }
+function Greeting({name}){
+  return <h1>Hello, {name}</h1>
 }
 
+function App(prop) {
+  return  <>
+            <Nav info="chink"/>
+            {/* <Image /> */}
+            <Btn val={true}/>
+            <DarkMode />
+            <Greeting name={"nigger"}/>
+            <h1>{prop.title}</h1>
+          </>
+}
 export default App;
