@@ -15,6 +15,7 @@ function Greeting({name}){
 }
 const date = new Date();
 let bool = true;
+
 function App(prop) {
   const [greet, setGreet] = React.useState('Hola');
   function clickHandler(){
